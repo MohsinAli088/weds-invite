@@ -52,17 +52,25 @@ export default function Closing() {
         <Divider className="mt-1.5 text-teal-deep" />
       </Reveal>
       <ul className="mt-3 flex flex-wrap justify-center gap-6 sm:gap-10">
-        {closing.contacts.map((c, i) => (
-          <Reveal as="li" key={i} delay={850 + i * 150} className="text-center">
-            <p className="text-sm font-semibold text-teal-deep sm:text-base">{c.name}</p>
-            <a
-              href={`tel:${c.phone.replace(/\s/g, '')}`}
-              className="text-sm tracking-wider text-rust transition hover:underline sm:text-base"
-            >
-              {c.phone}
-            </a>
-          </Reveal>
-        ))}
+        {closing.contacts.map((c, i) => {
+          const phones = c.phones || (c.phone ? [c.phone] : [])
+          return (
+            <Reveal as="li" key={i} delay={850 + i * 150} className="text-center">
+              <p className="text-sm font-semibold text-teal-deep sm:text-base">{c.name}</p>
+              <div className="flex flex-col gap-0.5">
+                {phones.map((phone) => (
+                  <a
+                    key={phone}
+                    href={`tel:${phone.replace(/\s/g, '')}`}
+                    className="text-sm tracking-wider text-rust transition hover:underline sm:text-base"
+                  >
+                    {phone}
+                  </a>
+                ))}
+              </div>
+            </Reveal>
+          )
+        })}
       </ul>
 
       {closing.venue && (
