@@ -91,7 +91,7 @@ export default function Closing() {
 
       <Reveal delay={1400} className="mt-5">
         <p className="text-sm tracking-[0.3em] text-teal-deep uppercase">
-          {couple.bride} &amp; {couple.groom}
+          {couple.groom} &amp; {couple.bride}
         </p>
       </Reveal>
     </Card>

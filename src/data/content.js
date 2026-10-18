@@ -6,11 +6,11 @@ export const music = { src: 'audio/sajna.mp3', title: 'Sajna', volume: 0.6 }
 
 export const couple = {
   groom: 'Sankalp',
-  bride: 'Shalini',
+  bride: 'Shiva',
   groomFull: 'Dr. Sankalp Shashwat',
-  brideFull: 'Dr. Shiva Shalini',
+  brideFull: 'Dr. Shiva',
   tagline: 'Two souls, one journey — with the blessings of our families',
-  hashtag: '#SankalpWedsShalini',
+  hashtag: '#SankalpWedsShiva',
 }
 
 export const mantra = {
@@ -34,13 +34,13 @@ export const blessings = {
 export const invitation = {
   lead: 'You are cordially invited to the wedding ceremony of',
   bride: {
-    name: 'Dr. Shiva Shalini',
+    name: 'Dr. Shiva',
     relation: 'D/O',
-    parents: ['Smt. Sangeeta Singh &', 'Shri Samrendra Kumar Singh'],
+    parents: ['Smt. Sangita Singh &', 'Shri Samrendra Kumar Singh'],
     family: [
       { relation: 'Brother', name: 'Swet Saurabh' },
       { relation: 'Sister-in-law', name: 'Payal' },
-      { relation: 'Niece', name: 'Shivangi' },
+      { relation: 'Niece', name: 'Shivanshi' },
     ],
   },
   weds: 'Weds',
@@ -185,7 +185,7 @@ export const closing = {
       members: [
         { relation: 'Brother', name: 'Swet Saurabh' },
         { relation: 'Sister-in-law', name: 'Payal' },
-        { relation: 'Niece', name: 'Shivangi' },
+        { relation: 'Niece', name: 'Shivanshi' },
       ],
     },
     groomSide: {
@@ -214,7 +214,7 @@ export const closing = {
     name: 'Ramada Resort & Spa',
     location: 'Udaipur, Rajasthan',
   },
-  hashtag: '#SankalpWedsShalini',
+  hashtag: '#SankalpWedsShiva',
 }
 
 export const isPlaceholder = () => false
